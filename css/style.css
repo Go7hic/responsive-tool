@@ -1,0 +1,98 @@
+/* --------------
+响应式测试工具 Rework By Gothic  
+-----------------*/
+body {
+	margin: 0;
+	padding: 0;
+}
+.model {
+	text-align: center;
+	margin: 0 auto 30px;
+}
+.model button {
+	width: 100px;
+	height: 35px;
+	margin: 10px auto;
+}
+.device {
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+.device iframe {
+	position: absolute;
+	border: none;
+}
+
+#iphone-portrait .device {
+	width: 367px;
+	height: 718px;
+	background: url('../img/iphone-portrait.png') no-repeat;
+}
+#iphone-portrait .device iframe {
+	top: 115px;
+	left: 24px;
+}
+#iphone-landscape .device {
+	width: 718px;
+	height: 367px;
+	background: url('../img/iphone-landscape.png') no-repeat;
+}
+#iphone-landscape .device iframe {
+	top: 23px;
+	left: 116px;
+}
+#ipad-portrait .device {
+	width: 973px;
+	height: 1245px;
+	background: url('../img/ipad-portrait.png') no-repeat;
+}
+#ipad-portrait .device iframe {
+	top: 110px;
+	left: 102px;
+}
+#ipad-landscape .device {
+	width: 1245px;
+	height: 973px;
+	background: url('../img/ipad-landscape.png') no-repeat;
+}
+#ipad-landscape .device iframe {
+	top: 103px;
+	left: 110px;
+}
+#kindlefire-landscape .device {
+	width: 1255px;
+	height: 795px;
+	background: url('../img/kindlefire-landscape.png') no-repeat;
+}
+#kindlefire-landscape iframe {
+	top: 96px;
+	left: 136px;
+}
+#kindlefire-portrait .device {
+	width: 795px;
+	height: 1255px;
+	background: url('../img/kindlefire-portrait.png') no-repeat;
+}
+#kindlefire-portrait iframe {
+	top: 95px;
+	left: 96px;
+}
+#nexus4-portrait .device {
+	width: 430px;
+	height: 840px;
+	background: url('../img/nexus-4-portrait.png') no-repeat;
+}
+#nexus4-portrait iframe {
+	top: 90px;
+	left: 22px;
+}
+#nexus4-landscape .device {
+	width: 840px;
+	height: 430px;
+	background: url('../img/nexus-4-landscape.png') no-repeat;
+}
+#nexus4-landscape iframe {
+	top: 43px;
+	left: 93px;
+}

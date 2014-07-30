@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+	<div id="iphone-portrait" class="model">
+	<p>Iphone竖屏</p>
+		<div class="device">
+			<iframe width="320" height="480" src="http://127.0.0.1/wecenter"></iframe>
+		</div>
+		<button class="reflash">刷新</button>
+	</div>
+	<div id="iphone-landscape" class="model">
+	<p>Iphone横屏</p>
+		<div class="device">
+			<iframe width="480" height="320" src="http://127.0.0.1/wecenter"></iframe>
+		</div>
+		<button class="reflash">刷新</button>
+	</div>
+	<div id="ipad-portrait" class="model">
+	<p>Ipad竖屏</p>
+		<div class="device">
+			<iframe width="768" height="1024" src="http://127.0.0.1/wecenter"></iframe>
+		</div>
+		<button class="reflash">刷新</button>
+	</div>
+	<div id="ipad-landscape" class="model">
+	<p>Ipad横屏</p>
+		<div class="device">
+			<iframe width="1024" height="600" src="http://127.0.0.1/wecenter/"></iframe>
+		</div>
+		<button class="reflash">刷新</button>
+	</div>
+	<div id="kindlefire-landscape" class="model">
+	<p>kindle横屏</p>
+		<div class="device">
+			<iframe width="1024" height="600" src="http://127.0.0.1/wecenter"></iframe>
+		</div>
+		<button class="reflash">刷新</button>
+	</div>
+	<div id="kindlefire-portrait" class="model">
+		<p>kindle竖屏</p>
+		<div class="device">
+			<iframe src="http://127.0.0.1/wecenter"  width="600" height="1024">
+				
+			</iframe>
+
+		</div>
+		<button class="reflash">刷新</button>
+	</div>
+	<div id="nexus4-portrait" class="model">
+	<p>nexus4竖屏</p>
+		<div class="device">
+			<iframe src="http://127.0.0.1/wecenter" width="384" height="600"></iframe>
+		</div>
+		<button class="reflash">刷新</button>
+	</div>
+	<div id="nexus4-landscape" class="model">
+	<p>nexus4横屏</p>
+		<div class="device">
+			<iframe src="http://127.0.0.1/wecenter" width="600" height="364"></iframe>
+		</div>
+		<button class="reflash">刷新</button>
+	</div>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+		$(function()
+		{
+			$('.reflash').click(function()
+			{
+				$(this).parent().find('iframe').attr('src', 'http://127.0.0.1/wecenter/?/article/square/');
+			});
+		});
+	</script>
+</body>
+</html>
